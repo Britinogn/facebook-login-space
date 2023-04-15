@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f2f2f2;
+    font-size: 8px;
+}
+
+/* article{
+    background-color: #f2f2f2;
+    height: 100vh;
+} */
+
+img{
+    object-fit: cover;
+    height: 100px;
+    width: 100%;
+}
+
+figure{
+    height: 100vh;
+    width: 100vw;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 4em;
+    color: blue;
+    text-transform: lowercase;
+}
+
+.header p{
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 20px;
+}
+
+.contact{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* padding: 15px; */
+    height: 100%;
+    display:flex;
+}
+
+
+form{
+    border: none;
+    border-radius: 5px;
+    background: white;
+    justify-content: center;
+    margin-left: 90px;
+    /* width: 50%; */
+    /* height: 65vh;  */
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19);
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat();
+    max-width: 850px;
+}
+
+input{
+    text-align: center;
+    width: 100%;
+    padding: 4px;
+    margin: 4px;
+    border: 1px solid blue;
+    height: 35px;
+    overflow: none;
+}
+
+/* input:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+} */
+
+/* input:focus{
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: darkgoldenrod;
+} */
+
+input::placeholder{
+    font-size: 10px;
+}
+
+input[ type="text"]{
+    font-size: 12px;
+}
+
+.log{
+    display: block;
+    text-align: center;
+    border: none;
+    margin-top: 5px;
+    background: #0000ff;
+    padding: 3px;
+    font-size: 2em;
+    border-radius: 10px;
+    /* margin-left: 40%; */
+    color: white;
+    cursor: pointer;
+}
+
+form p{
+    margin-bottom: 3em;
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+
+.btn{
+    border: none;
+    background: green;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+
+footer{
+    /* margin-top: 34px; */
+    text-align: center;
+    font-size: 15px;
+    padding: 10%;
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width:768px){
+    
+    body{
+        position: relative;
+    }
+    
+    .contact form{
+        align-items: center;
+        padding: 50px;
+        margin-left:35% ;
+    }
+
+    article{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header h1{
+        margin-left: 95px;
+        margin-top: 78px;
+        font-size: 1.3rem;
+    }
+
+    .header p{
+        font-size: 15px;
+        margin-left: 92px;
+    }
+
+    .contact{
+        padding-left: 15%;
+        padding-top: 5%;
+    }
+
+    form p{
+        font-size: 1.3em;
+    }
+
+    img{
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+}
